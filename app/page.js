@@ -1,13 +1,11 @@
 import Link from 'next/link';
+import { Scales } from './scales';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100">
       <div className="container max-w-4xl h-full w-full mx-auto bg-neutral-100 dark:bg-neutral-900 relative">
-        <div className="absolute right-0 top-0 h-full w-8 border-x border-(--pattern-fg)
-    bg-[repeating-linear-gradient(315deg,var(--pattern-fg)_0,var(--pattern-fg)_1px,transparent_0,transparent_50%)]
-    bg-size-[10px_10px] bg-fixed">
-</div>
+        <Scales />
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">
             Movie & Book Recommendations
