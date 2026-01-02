@@ -3,14 +3,15 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container max-w-4xl h-full w-full mx-auto bg-neutral-100 dark:bg-neutral-900 relative">
+        <div className="absolute right-0 top-0 h-full w-8 border-x border-(--pattern-fg)
+    bg-[repeating-linear-gradient(315deg,var(--pattern-fg)_0,var(--pattern-fg)_1px,transparent_0,transparent_50%)]
+    bg-size-[10px_10px] bg-fixed">
+</div>
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">
             Movie & Book Recommendations
           </h1>
-          <p className="text-xl text-gray-600">
-            Powered by Machine Learning
-          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -21,7 +22,7 @@ export default function Home() {
                 Get Recommendations
               </h2>
               <p className="text-gray-600">
-                Discover movies and books tailored to your preferences
+                Discover movies and books
               </p>
             </div>
           </Link>
@@ -33,26 +34,10 @@ export default function Home() {
                 Guessing Game
               </h2>
               <p className="text-gray-600">
-                Think of a character and let me guess who it is
+                Think of a character
               </p>
             </div>
           </Link>
-        </div>
-
-        <div className="mt-16 text-center">
-          <div className="inline-flex items-center gap-4 bg-white rounded-lg shadow px-6 py-3">
-            <div className="text-sm text-gray-600">
-              <span className="font-semibold text-gray-900">500</span> Movies
-            </div>
-            <div className="w-px h-4 bg-gray-300"></div>
-            <div className="text-sm text-gray-600">
-              <span className="font-semibold text-gray-900">45</span> Books
-            </div>
-            <div className="w-px h-4 bg-gray-300"></div>
-            <div className="text-sm text-gray-600">
-              <span className="font-semibold text-gray-900">12</span> Characters
-            </div>
-          </div>
         </div>
       </div>
     </div>
