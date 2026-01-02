@@ -3,9 +3,8 @@ import { Scales } from './scales';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-linear-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen h-screen bg-linear-to-br from-blue-50 to-indigo-100">
       <div className="container max-w-4xl h-full w-full mx-auto bg-neutral-100 dark:bg-neutral-900 relative">
-        <Scales />
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">
             Movie & Book Recommendations

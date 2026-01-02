@@ -49,7 +49,6 @@ export default function RecommendationsPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-8">
       <div className="container max-w-4xl h-full w-full mx-auto bg-neutral-100 dark:bg-neutral-900 relative">
-        <Scales />
         <Link href="/" className="text-blue-600 hover:text-blue-800 mb-4 inline-block">
           ← Back to Home
         </Link>
