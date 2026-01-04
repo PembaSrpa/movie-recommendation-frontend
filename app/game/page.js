@@ -106,10 +106,6 @@ export default function GamePage() {
                 <div className="text-white/60 text-sm">
                   Question <span className="text-white font-bold text-lg">{gameState.question_number}</span>
                 </div>
-                <div className="bg-purple-600/30 border border-purple-500/50 px-4 py-2 rounded-lg">
-                  <span className="text-white font-semibold">{gameState.remaining_candidates || '?'}</span>
-                  <span className="text-white/70 text-sm ml-2">candidates left</span>
-                </div>
               </div>
 
               <h2 className="text-2xl font-bold text-white mb-8">{gameState.question}</h2>
